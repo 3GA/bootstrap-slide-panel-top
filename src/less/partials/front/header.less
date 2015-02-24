@@ -1,13 +1,13 @@
 //
-// Header
+// Slide Panel Top
 // --------------------------------------------------
 
 header {
     #home-accordion {
         position: fixed;
-        width: 100%;
         top: 0;
         z-index: 100;
+        width: 100%;
         // Button close
         .close {
             position: absolute;
@@ -44,9 +44,9 @@ header {
                 text-transform: uppercase;
                 font-weight: normal;
                 a {
+                    position: relative;
                     display: block;
                     padding: 10px 10px 20px;
-                    position: relative;
                     .transition(all 150ms ease);
                     &:hover,
                     &:focus {
@@ -62,8 +62,8 @@ header {
                         .box-shadow(0px 1px 1px -1px rgba(0,0,0,.8));
                     }
                     &[aria-expanded="true"] {
-                        .box-shadow(0px 1px 1px 0px rgba(0,0,0,.8));
                         padding-top: 0;
+                        .box-shadow(0px 1px 1px 0px rgba(0,0,0,.8));
                     span {
                         .opacity(0);
                         .transition(all 150ms ease);
