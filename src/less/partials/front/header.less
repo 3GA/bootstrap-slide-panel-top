@@ -2,105 +2,105 @@
 // Header
 // --------------------------------------------------
 
-// Fixed header
 header {
-  // Panel Top
-  #home-accordion {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    .close {
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      z-index: 100;
-      color: @white;
-      .opacity(1);
-      background: transparent;
-      border: 0;
-      font-size: 1.4em;
-    }
-    .panel {
-      border-radius: 0;
-      border: none;
-      background-color: @brand-primary;
-    }
-    .panel-body {
-      .title {
-        text-transform: uppercase;
-        font-size: 1.4em;
-        font-weight: normal;
-        color: @white;
-      }
-    }
-    .panel-heading {
-      color: @white;
-      background-color: @brand-primary;
-      padding: 0;
-      border-radius: 0;
-      h4 {
-        padding: 0;
-        margin: 0;
-        text-transform: uppercase;
-        font-weight: normal;
-        a {
-          display: block;
-          padding: 10px 10px 20px;
-          position: relative;
-          .transition(all 150ms ease);
-          &:hover,
-          &:focus {
-            text-decoration: none;
-          }
-          &:after {
-            content: '';
+    #home-accordion {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+        // Button close
+        .close {
             position: absolute;
-            left: 49%;
-            bottom: -18px;
-            .square(40px);
-            border-radius: 50%;
-            .box-shadow(0px 1px 1px -1px rgba(0,0,0,.8));
-          }
-          &[aria-expanded="true"] {
-            .box-shadow(0px 1px 1px 0px rgba(0,0,0,.8));
-            padding-top: 0;
-            span {
-              .opacity(0);
-              .transition(all 150ms ease);
-            }
-            &:after {
-              background: @brand-primary url(../images/arrow-up.png) no-repeat center center;
-            }
-          }
-          &[aria-expanded="false"] {
-            .box-shadow(0px 0px 2px 0px rgba(0,0,0,.8));
-            span {
-              .opacity(1);
-              .transition(all 150ms ease);
-            }
-            &:after {
-              background: @brand-primary url(../images/double-arrow.png) no-repeat center center;
-            }
-          }
+            right: 10px;
+            top: 10px;
+            z-index: 100;
+            color: @white;
+            .opacity(1);
+            background: transparent;
+            border: 0;
+            font-size: 1.4em;
         }
-      }
-      &:hover {
-        background-color: darken(@brand-primary, 5%);
-        h4 {
-          a {
-            text-decoration: none;
-            &[aria-expanded=true],
-            &[aria-expanded=false] {
-              &:after {
+        .panel {
+            border-radius: 0;
+            border: none;
+            background-color: @brand-primary;
+        }
+        .panel-body {
+            .title {
+                text-transform: uppercase;
+                font-size: 1.4em;
+                font-weight: normal;
+                color: @white;
+            }
+        }
+        .panel-heading {
+            color: @white;
+            background-color: @brand-primary;
+            padding: 0;
+            border-radius: 0;
+            h4 {
+                padding: 0;
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: normal;
+                a {
+                    display: block;
+                    padding: 10px 10px 20px;
+                    position: relative;
+                    .transition(all 150ms ease);
+                    &:hover,
+                    &:focus {
+                        text-decoration: none;
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        left: 49%;
+                        bottom: -18px;
+                        .square(40px);
+                        border-radius: 50%;
+                        .box-shadow(0px 1px 1px -1px rgba(0,0,0,.8));
+                    }
+                    &[aria-expanded="true"] {
+                        .box-shadow(0px 1px 1px 0px rgba(0,0,0,.8));
+                        padding-top: 0;
+                    span {
+                        .opacity(0);
+                        .transition(all 150ms ease);
+                    }
+                    &:after {
+                        &:before { content: "\e114"; }
+                            background: @brand-primary url(../images/arrow-up.png) no-repeat center center;
+                        }
+                    }
+                    &[aria-expanded="false"] {
+                        .box-shadow(0px 0px 2px 0px rgba(0,0,0,.8));
+                        span {
+                            .opacity(1);
+                            .transition(all 150ms ease);
+                        }
+                        &:after {
+                            background: @brand-primary url(../images/double-arrow.png) no-repeat center center;
+                        }
+                    }
+                }
+            }
+            &:hover {
                 background-color: darken(@brand-primary, 5%);
-              }
+                h4 {
+                    a {
+                        text-decoration: none;
+                        &[aria-expanded=true],
+                        &[aria-expanded=false] {
+                            &:after {
+                                background-color: darken(@brand-primary, 5%);
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
 }
 
 //
