@@ -1,15 +1,21 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* the humans responsible & colophon */
+/* humanstxt.org */
 
-# TEAM
 
-    <name> -- <role> -- <twitter>
+/* ABOUT ME */
+  Samuel Frémondière
+  Site: http://samcome.github.io/bootstrap-slide-panel-top/
+  Twitter: https://twitter.com/samcome
+  Github: https://github.com/samcome
+  Location: Nantes - France
 
-# THANKS
+/* THANKS */
+  Paul Irish : Boilerplate (http://www.html5boilerplate.com/)
+  mdo and fat : Bootstrap (http://getbootstrap.com//)
+  ...
 
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+/* SITE */
+  Last update: 2015/12/02
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery...
+  Software: Sublime Text
