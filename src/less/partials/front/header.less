@@ -64,13 +64,14 @@ header {
                     &[aria-expanded="true"] {
                         padding-top: 0;
                         .box-shadow(0px 1px 1px 0px rgba(0,0,0,.8));
-                    span {
-                        .opacity(0);
-                        .transition(all 150ms ease);
-                    }
-                    &:after {
-                        &:before { content: "\e114"; }
-                            background: @brand-primary url(../images/arrow-up.png) no-repeat center center;
+                        span {
+                            .opacity(0);
+                            .transition(all 150ms ease);
+                        }
+                        &:after {
+                            &:before {
+                                background: @brand-primary url(../images/arrow-up.png) no-repeat center center;
+                            }
                         }
                     }
                     &[aria-expanded="false"] {
